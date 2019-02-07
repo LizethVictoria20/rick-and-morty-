@@ -76,6 +76,7 @@ h1 {
   margin-bottom: 40px;
 }
 .button-card {
+  color: black;
   border-radius: 5px;
   background: #6db1b7;
   width: 150px;
@@ -83,6 +84,10 @@ h1 {
   cursor: pointer;
   display: inline-block;
   text-align: center;
+}
+.button-card:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .logo {
