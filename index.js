@@ -9,7 +9,9 @@ fetch("https://rickandmortyapi.com/api/character/")
   })
   .then(array => {
     const container = document.querySelector(".personajes");
-    array.map(myObj => {
+    const elementos = array.slice(1, 4);
+    console.log(elementos);
+    elementos.map(myObj => {
       const containerImage = document.createElement("DIV");
       containerImage.className = "card";
       const imgTag = document.createElement("IMG");
@@ -17,6 +19,14 @@ fetch("https://rickandmortyapi.com/api/character/")
       imgTag.setAttribute("src", myObj.image);
       containerImage.appendChild(imgTag);
       container.appendChild(containerImage);
+
+      const containerInfo = document.createElement("DIV");
+      containerInfo.className = "card-body";
+      const infoTag = document.createElement("H5");
+
+      infoTag.innerText = myObj.name;
+      containerInfo.appendChild(infoTag);
+      containerImage.appendChild(containerInfo);
     });
 
     /*let imagen1 = document.getElementById("imagen1");
