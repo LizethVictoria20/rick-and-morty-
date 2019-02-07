@@ -4,21 +4,28 @@ body {
   max-width: 1020px;
   margin-left: 124px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .personajes {
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px auto;
+  grid-template-columns: repeat(3, 1fr);
   height: 300px;
   width: 100%;
   text-align: center;
   margin-top: 60px;
   max-width: 50%;
+  margin-left: 86px;
+}
+.columna-personajes {
+  grid-template-rows: 200px auto;
+  grid-template-columns: repeat(4, 1fr);
 }
 h1 {
   text-align: center;
   color: #6db1b7;
+  margin-left: 150px;
+  margin-top: 50px;
 }
 .button-characters {
   background: #6db1b7;
@@ -31,10 +38,11 @@ h1 {
   margin-top: 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.card {
-  margin-right: 20px;
-  width: 200px;
-  height: 400px;
+.personajes .card {
+  margin-right: 30px;
+  width: 340px;
+  height: 300px;
+  margin-bottom: 122px;
 }
 .card-body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -43,12 +51,16 @@ h1 {
 .nav {
   margin-top: 20px;
 }
+.nav a:hover {
+  color: black;
+}
 .twitter {
   margin-left: 700px;
   margin-top: 10px;
 }
 .github {
   margin-top: 10px;
+  margin-left: 10px;
 }
 .page-item {
   color: #6db1b7;
@@ -62,4 +74,30 @@ h1 {
 .card {
   width: 324px;
   margin-bottom: 40px;
+}
+.button-card {
+  border-radius: 5px;
+  background: #6db1b7;
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+}
+.logo {
+  margin-top: 60px;
+  margin-left: 150px;
+}
+.btn {
+  background: #6db1b7;
+  color: black;
+}
+.btn:hover {
+  color: black;
+}
+.button-home {
+  margin-bottom: 50px;
+}
+.button-home:hover {
+  color: black;
+}
+@media screen and (min-width: 768px) {
 }
