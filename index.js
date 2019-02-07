@@ -28,30 +28,9 @@ fetch("https://rickandmortyapi.com/api/character/")
       containerInfo.appendChild(infoTag);
       containerImage.appendChild(containerInfo);
 
-      const button = document.createElement("BUTTON");
+      const button = document.createElement("A");
       button.className = "button-card";
       button.innerText = "Ver más";
-
       containerInfo.appendChild(button);
     });
-
-    /*let imagen1 = document.getElementById("imagen1");
-    let imagen2 = document.getElementById("imagen2");
-    let imagen3 = document.getElementById("imagen3");
-    let imagen4 = document.getElementById("imagen4");
-
-    let name1 = document.getElementById("name1");
-    let name2 = document.getElementById("name2");
-    let name3 = document.getElementById("name3");
-    let name4 = document.getElementById("name4");
-
-    imagen1.src = `${array[12].image}`;
-    imagen2.src = `${array[13].image}`;
-    imagen3.src = `${array[14].image}`;
-    imagen4.src = `${array[15].image}`;
-
-    name1.innerHTML = `${array[12].name}`;
-    name2.innerHTML = `${array[13].name}`;
-    name3.innerHTML = `${array[14].name}`;
-    name4.innerHTML = `${array[15].name}`;*/
   });

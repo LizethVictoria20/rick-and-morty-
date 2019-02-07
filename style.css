@@ -15,7 +15,7 @@ body {
   text-align: center;
   margin-top: 60px;
   max-width: 50%;
-  margin-left: 86px;
+  margin-left: 62px;
 }
 .columna-personajes {
   grid-template-rows: 200px auto;
@@ -42,7 +42,7 @@ h1 {
   margin-right: 30px;
   width: 340px;
   height: 300px;
-  margin-bottom: 122px;
+  margin-bottom: 200px;
 }
 .card-body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -55,7 +55,7 @@ h1 {
   color: black;
 }
 .twitter {
-  margin-left: 700px;
+  margin-left: 600px;
   margin-top: 10px;
 }
 .github {
@@ -78,10 +78,13 @@ h1 {
 .button-card {
   border-radius: 5px;
   background: #6db1b7;
-  margin-top: 10px;
   width: 150px;
   height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
 }
+
 .logo {
   margin-top: 60px;
   margin-left: 150px;
@@ -99,5 +102,10 @@ h1 {
 .button-home:hover {
   color: black;
 }
-@media screen and (min-width: 768px) {
+
+.jumbotron {
+  margin-left: 150px;
+}
+.enlaces {
+  color: red;
 }
