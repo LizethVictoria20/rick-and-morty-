@@ -27,6 +27,12 @@ fetch("https://rickandmortyapi.com/api/character/")
       infoTag.innerText = myObj.name;
       containerInfo.appendChild(infoTag);
       containerImage.appendChild(containerInfo);
+
+      const button = document.createElement("BUTTON");
+      button.className = "button-card";
+      button.innerText = "Ver más";
+
+      containerInfo.appendChild(button);
     });
 
     /*let imagen1 = document.getElementById("imagen1");
