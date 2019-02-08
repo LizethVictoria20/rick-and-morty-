@@ -33,6 +33,5 @@ fetch("https://rickandmortyapi.com/api/character/")
       description.className = "button-card";
       description.innerText = "Description";
       containerInfo.appendChild(description);
-      console.log(description);
     });
   });
