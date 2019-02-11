@@ -123,3 +123,17 @@ h1 {
   text-align: left;
   margin-left: 30px;
 }
+.button {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  margin-left: 900px;
+  border-radius: 5px;
+  background: #6db1b7;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+.back {
+  margin-right: 650px;
+  margin-bottom: 20px;
+}
