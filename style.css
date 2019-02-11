@@ -17,6 +17,12 @@ body {
   max-width: 50%;
   margin-left: 62px;
 }
+.jumbotron {
+  margin-left: 150px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .columna-personajes {
   grid-template-rows: 200px auto;
   grid-template-columns: repeat(4, 1fr);
@@ -109,9 +115,11 @@ h1 {
   color: black;
 }
 
-.jumbotron {
-  margin-left: 150px;
-}
 .enlaces {
   color: red;
+}
+.description {
+  display: inline-block;
+  text-align: left;
+  margin-left: 30px;
 }
