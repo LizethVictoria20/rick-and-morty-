@@ -19,8 +19,7 @@ body {
 }
 .jumbotron {
   margin-left: 150px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .columna-personajes {
@@ -122,6 +121,7 @@ h1 {
   display: inline-block;
   text-align: left;
   margin-left: 30px;
+  line-height: 50px;
 }
 .button {
   margin-top: 150px;
@@ -132,6 +132,11 @@ h1 {
   width: 150px;
   height: 40px;
   cursor: pointer;
+}
+.personaje {
+  margin-right: 100px;
+  border-radius: 5px;
+  margin-top: -150px;
 }
 .back {
   margin-right: 650px;
