@@ -10,7 +10,6 @@ fetch("https://rickandmortyapi.com/api/character/")
   .then(array => {
     const container = document.querySelector(".personajes");
     const elementos = array.slice(1, 4);
-    console.log(elementos);
     elementos.map(myObj => {
       const containerImage = document.createElement("DIV");
       containerImage.className = "card";

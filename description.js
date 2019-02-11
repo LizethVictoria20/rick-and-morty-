@@ -1,12 +1,12 @@
 const url = new URLSearchParams(window.location.search);
-const get = url.get("id");
-console.log(get);
-const fetchUrl = "https://rickandmortyapi.com/api/character/" + get;
+const id = url.get("id");
 
-fetch(fetchUrl)
+const personajeID = "https://rickandmortyapi.com/api/character/" + id;
+
+fetch(personajeID)
   .then(value => {
     return value.json();
   })
-  .then(value => {
-    console.log(value);
+  .then(obj => {
+    console.log(obj);
   });
