@@ -9,8 +9,18 @@ fetch("https://rickandmortyapi.com/api/character/")
   })
   .then(array => {
     const container = document.querySelector(".personajes");
-    const elementos = array.slice(1, 4);
-    elementos.map(myObj => {
+
+    const random1 = Math.floor(Math.random() * array.length);
+    const random2 = Math.floor(Math.random() * array.length);
+    const random3 = Math.floor(Math.random() * array.length);
+
+    const elemento1 = array[random1];
+    const elemento2 = array[random2];
+    const elemento3 = array[random3];
+
+    const todosLosElementos = [elemento1, elemento2, elemento3];
+
+    todosLosElementos.map(myObj => {
       const containerImage = document.createElement("DIV");
       containerImage.className = "card";
       const imgTag = document.createElement("IMG");
