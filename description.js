@@ -9,14 +9,17 @@ fetch(personajeID)
   })
   .then(obj => {
     console.log(obj);
-    const container = document.querySelector(".jumbotron");
+    const container = document.querySelector(".container");
+    const row = document.createElement("DIV");
+    row.className = "row";
+    container.appendChild(row);
 
     const containerImagen = document.createElement("IMG");
-    containerImagen.className = "personaje";
+    containerImagen.className = "personaje col-sm-4";
     containerImagen.setAttribute("src", obj.image);
 
     const description = document.createElement("p");
-    description.className = "description";
+    description.className = "description col-sm-4 col-md-4";
     description.innerHTML = `
       <strong>Name : </strong>${obj.name}</br>
       <strong>Status : </strong>${obj.status}</br>
@@ -25,6 +28,6 @@ fetch(personajeID)
       <strong>Location : </strong>${obj.location.name}
     `;
 
-    container.appendChild(containerImagen);
-    container.appendChild(description);
+    row.appendChild(containerImagen);
+    row.appendChild(description);
   });

@@ -17,8 +17,12 @@ body {
   margin-left: 62px;
 }
 .jumbotron {
-  margin-left: 150px;
+  display: flex;
+  justify-content: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  height: 350px;
+  width: 800px;
+  margin-top: 30px;
 }
 
 .columna-personajes {
@@ -57,6 +61,11 @@ h1 {
 .container {
   padding: 0;
   margin-left: 80px;
+}
+.container-description {
+  background: #eee;
+  border-radius: 5px;
+  width: 80%;
 }
 .characters {
   padding: 0;
@@ -131,8 +140,8 @@ h1 {
 .description {
   display: inline-block;
   text-align: left;
-  margin-left: 30px;
   line-height: 50px;
+  margin-top: 23px;
 }
 .button {
   margin-top: 80px;
@@ -146,7 +155,7 @@ h1 {
 .personaje {
   margin-right: 100px;
   border-radius: 5px;
-  margin-top: -150px;
+  margin: 20px;
 }
 .back {
   margin-right: 650px;
