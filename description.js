@@ -8,7 +8,6 @@ fetch(personajeID)
     return value.json();
   })
   .then(obj => {
-    console.log(obj);
     const container = document.querySelector(".container");
     const row = document.createElement("DIV");
     row.className = "row";
