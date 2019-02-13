@@ -26,9 +26,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 h1 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: #6db1b7;
-  margin-left: 150px;
   margin-top: 50px;
 }
 .button-characters {
@@ -51,12 +51,16 @@ h1 {
 .card {
   padding: 0;
   margin: 20px;
-  width: 380px;
+
   margin-bottom: 40px;
 }
 .container {
   padding: 0;
   margin-left: 80px;
+}
+.characters {
+  padding: 0;
+  margin-left: 0;
 }
 
 .card-body {

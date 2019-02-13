@@ -20,7 +20,7 @@ fetch("https://rickandmortyapi.com/api/character/")
 
     random.map(myObj => {
       const containerImage = document.createElement("DIV");
-      containerImage.className = "card col-lg-3 col-md-4";
+      containerImage.className = "card col-md-4 col-lg-3";
       const imgTag = document.createElement("IMG");
 
       imgTag.setAttribute("src", myObj.image);
